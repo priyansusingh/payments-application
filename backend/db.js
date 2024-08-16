@@ -1,7 +1,8 @@
 // backend/db.js
 const mongoose = require('mongoose');
+require('dotenv').config()
 
-mongoose.connect("mongodb+srv://admin:paytm%401234@cluster0.hmw9y.mongodb.net/")
+mongoose.connect(process.env.MONGO_URL)
 
 
 // Create a Schema for Users
