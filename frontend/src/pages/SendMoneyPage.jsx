@@ -42,7 +42,7 @@ export default function SendMoney(){
                     />
                     </div>
                     <button onClick={() => {
-                        axios.post("http://localhost:3000/api/v1/account/transfer", {
+                        axios.post("https://payments-application-1.onrender.com/transfer", {
                             to: id,
                             amount
                         }, {
