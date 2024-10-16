@@ -33,7 +33,7 @@ export default function Signup(){
         }} placeholder="123456" label={"Password"} />
         <div className="pt-4">
           <Button onClick={async () => {
-            const response = await axios.post("https://payments-application-1.onrender.com/signup", {
+            const response = await axios.post("https://payments-application-1.onrender.com/user/signup", {
                 firstName,
                 lastName,
                 username,
